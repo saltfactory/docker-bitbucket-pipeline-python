@@ -7,4 +7,6 @@ RUN apk update && apk add ruby
 RUN echo "gem: --no-rdoc --no-ri" > ~/.gemrc
 RUN gem install sass
 RUN pip install awscli
+RUN pip install awsebcli
 RUN mkdir -p /var/app/current
+WORKDIR /var/app/current
